@@ -8,6 +8,7 @@ import React from 'react'
 import {FaLinkedin, FaGithub, FaYoutube} from "react-icons/fa"
 import "../styles/Footer.css"
 import Resume from "../assets/LM Resume.pdf"
+// import {FaBars, FaTimes} from "react-icons/fa";
 
 
 const Footer = () => {

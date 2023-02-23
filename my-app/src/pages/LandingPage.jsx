@@ -1,5 +1,6 @@
 import React from 'react'
 import "../styles/Landingpage.css"
+import {FaLinkedin, FaGithub, FaYoutube } from "react-icons/fa"
 
 const LandingPage = () => {
   return (
@@ -12,7 +13,10 @@ const LandingPage = () => {
                   <h1>I'm Luis</h1>
                   <h1><span className = "accent">Moli</span>nuevo</h1>
                   <p className = "intro">A FullStack Webdeveloper</p>
+                  <div className='homeBottom'>
                     <a className="contact-button" href="#contact-me">Hire Me</a>
+                  </div>
+                  
                 </div>
               </div>
 

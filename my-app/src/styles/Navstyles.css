@@ -18,6 +18,11 @@ body {
 	padding: 0px 80px;
 }
 
+.logoLink {
+	text-decoration: none;
+	color:#05AFF2;
+}
+
 header {
 	width: 100%;
 	display: flex;
@@ -77,12 +82,30 @@ header div, nav {
 	align-items: center;
 }
 
+.icons {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0px 4px;
+    text-align: center;
+	margin: 5px;
+}
+
+.navIcons {
+	display: none;
+}
+
+
 
 @media only screen and (max-width: 1024px) {
 	header .nav-btn {
 		display: flex;
 		visibility: visible;
 		opacity: 1;
+	}
+
+	.navIcons {
+		display: block;
 	}
 
 	header nav {
