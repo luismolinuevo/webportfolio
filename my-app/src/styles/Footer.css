@@ -1,0 +1,43 @@
+#footer {
+    height:70px;
+    background-color: #05AFF2;
+    display: flex;
+    align-items: center;
+    
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+}
+
+footer ul li {
+    font-size: 30px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.foot a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 350px) {
+    footer ul li {
+        font-size: 25px;
+    }
+
+    .foot a {
+        font-size: 18px;
+    }
+}

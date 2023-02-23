@@ -1,0 +1,139 @@
+#home {
+    height: 100vh;
+    /* width: 100%; */
+    /* background-image: url("../assets/bg.jpg");
+    background-color: #131515;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center/center;
+     */
+    /* background-color: black; */
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    padding-top: 130px;
+    color:#0D0D0D;
+
+}
+
+.hey {
+    font-size: 35px;
+    font-weight: bold;
+    color:#05AFF2;
+}
+
+.home-info h1 {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.intro {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 25px;
+}
+    
+.emjoi {
+    font-size: 300px;
+    padding-right: 120px;
+}
+
+.contact-button{
+    padding: 10px 25px;
+    /* background-color: #8CA672; */
+    color:#F2F2F2;
+    background-color: #05AFF2;
+    border: none;
+    text-decoration: none;
+    /* color: #8C613B; */
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.8s;
+    overflow: hidden;
+}
+
+.accent {
+    color:#05AFF2;
+}
+
+@media (max-width: 1040px) {
+    .container {
+        padding: 0px 70px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .hero {
+        padding-top:80px;
+    }
+    .hero .hey {
+        font-size: 25px;
+    }
+    
+    .home-info h1 {
+        font-size: 55px;
+    }
+
+    .intro {
+        font-size: 25px;
+    }
+
+    .contact-button {
+        padding: 8px 20px;
+    }
+}
+
+@media (max-width: 350px) {
+    .container {
+        padding: 0px 40px;
+    }
+    .hero {
+        padding-top:50px;
+    }
+    .hero .hey {
+        font-size: 20px;
+    }
+    
+    .home-info h1 {
+        font-size: 50px;
+    }
+
+    .intro {
+        font-size: 20px;
+    }
+
+    .contact-button {
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 260px) {
+    .container {
+        padding: 0px 20px;
+    }
+    .hero {
+        padding-top:25px;
+    }
+    .hero .hey {
+        font-size: 20px;
+    }
+    
+    .home-info h1 {
+        font-size: 35px;
+    }
+
+    .intro {
+        font-size: 15px;
+    }
+
+    .contact-button {
+        padding: 5px 8px;
+        font-size: 15px;
+    }
+
+}
