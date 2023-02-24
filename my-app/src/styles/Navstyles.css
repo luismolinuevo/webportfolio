@@ -93,6 +93,7 @@ header div, nav {
 
 .navIcons {
 	display: none;
+	visibility: hidden;
 }
 
 
@@ -105,7 +106,8 @@ header div, nav {
 	}
 
 	.navIcons {
-		display: block;
+		display: flex;
+		visibility: visible;
 	}
 
 	header nav {

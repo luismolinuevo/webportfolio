@@ -2,7 +2,8 @@ import React from 'react'
 import "../styles/skills.css"
 import {FaReact, FaBootstrap, FaGitSquare} from "react-icons/fa";
 import {DiJava, DiJavascript1, DiCss3, DiHtml5, DiPython } from "react-icons/di"
-import hey from "../assets/hey.png"
+import { Slide } from "react-awesome-reveal";
+
 
 
 const Skills = () => {
@@ -11,6 +12,7 @@ const Skills = () => {
       <div className='container'>
         <h1 className="heading">Skills</h1>
         <div className = "skills-main">
+          <Slide damping={0.1} direction={"left"}>
             <div className="about">
               <p className = "accent">Hello!</p>
               <p>My name is Luis Molinuevo a Web Developer. 
@@ -19,7 +21,8 @@ const Skills = () => {
                 I use modern technologies like React to build fully responsive full stack applications.
                 I also love to upscale my skills and problem solve.</p>
             </div>
-            
+          </Slide>
+          <Slide damping={0.2} direction={"left"}>
             <div className = "skills">
               {/* <img className = "test" src={hey}/> */}
               
@@ -56,6 +59,7 @@ const Skills = () => {
                 <p>Git</p>
               </div>
             </div>
+          </Slide>
           
         </div>
       </div>
