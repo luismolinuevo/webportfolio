@@ -17,6 +17,7 @@ const LandingPage = () => {
                     <p className = "intro">A FullStack Webdeveloper</p>
                     <div className='homeBottom'>
                       <a className="contact-button" href="#contact-me">Hire Me</a>
+                      <a className="viewwork" href='#projects'>My Work</a>
                     </div>
                   </div>
                 </div>

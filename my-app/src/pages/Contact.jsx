@@ -60,7 +60,7 @@ const Contact = () => {
             </form>
 
             {
-              isGood ? <div className='center'><Alert serverity="success" variant='outlined'>Email Sent!!!!</Alert></div> : ""
+              isGood ? <div className='center'><Alert serverity="success" variant='outlined'>Success!</Alert></div> : ""
             } 
             {
               isError ? <div className='center'><Alert serverity="error" variant='outlined'>"Error"</Alert></div> : ""

@@ -43,21 +43,30 @@
 }
 
 .contact-button{
+    margin: 5px;
     padding: 10px 25px;
-    /* background-color: #8CA672; */
     color:#F2F2F2;
     background-color: #05AFF2;
     border: none;
     text-decoration: none;
-    /* color: #8C613B; */
     font-weight: bold;
     font-size: 20px;
-    transition: 0.8s;
     overflow: hidden;
 }
 
 .accent {
     color:#05AFF2;
+}
+
+.viewwork {
+    margin: 5px;
+    padding: 10px 25px;
+    color:#05AFF2;
+    text-decoration: none;
+    border: 1px solid #05AFF2;
+    font-weight: bold;
+    font-size: 20px;
+    overflow: hidden;
 }
 
 
