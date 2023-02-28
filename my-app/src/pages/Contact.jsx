@@ -1,15 +1,22 @@
-import React from 'react'
+import {useState} from 'react'
 import emailjs from 'emailjs-com';
 import "../styles/Contactme.css"
 import {FaLinkedin, FaGithub, FaYoutube} from "react-icons/fa"
+import Alert from '@mui/material/Alert';
 
 
 const Contact = () => {
 
+  const [isError, setIsError] = useState(false);
+  const [isGood, setIsGood] = useState(false);
+
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs.sendForm('service_ifz1oqo', 'template_wm5gmpk', e.target, '2e4j5otUuU83ooFW_')
+    setIsGood(false);
+    setIsError(false)
+    
+    try {
+      emailjs.sendForm('service_ifz1oqo', 'template_wm5gmpk', e.target, '2e4j5otUuU83ooFW_')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -17,6 +24,12 @@ const Contact = () => {
       });
 
       e.target.reset();
+      setIsGood(true)
+    } catch {
+      setIsError(true)
+    }
+
+    
   };
 
   return (
@@ -28,9 +41,9 @@ const Contact = () => {
             <h3 className='email'>luismolinuevo0@gmail.com</h3>
             <div className='socialContain'>
               <ul>
-                <li><FaLinkedin className='contactIcons'/></li>
-                <li><FaGithub className='contactIcons'/></li>
-                <li><FaYoutube className='contactIcons'/></li>
+                <a href="https://www.linkedin.com/in/luismolinuevo/" target="blank_"><li><FaLinkedin className='contactIcons'/></li></a>
+                <a href="https://github.com/" target="blank_"><li><FaGithub className='contactIcons'/></li></a>
+                <a href="https://www.youtube.com/channel/UCRc-HqHUwj3obUnh4--flGQ" target="blank_"><li><FaYoutube className='contactIcons'/></li> </a>
               </ul>
             </div>
 
@@ -45,6 +58,17 @@ const Contact = () => {
                 <textarea className = "mesg" type="text" placeholder = "Enter Message" name="message" />
                 <input type="submit"  className = "submit" placeholder = "Enter Message" value="Send" />
             </form>
+
+            {
+              isGood ? <div className='center'><Alert serverity="success" variant='outlined'>Email Sent!!!!</Alert></div> : ""
+            } 
+            {
+              isError ? <div className='center'><Alert serverity="error" variant='outlined'>"Error"</Alert></div> : ""
+            }
+            
+            
+
+      
           </div>
         </div>
     </section>
