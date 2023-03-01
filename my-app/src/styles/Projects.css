@@ -9,7 +9,6 @@
     justify-content: space-around;
     flex-wrap: wrap;
     /* padding: 10px; */
-    
 }
 
 .project-element {
@@ -64,7 +63,6 @@
 .project-info {
     font-size: 20px;
     padding: 5px; 
-    
     text-align: center;
 }
 
@@ -99,4 +97,11 @@
     .project-links {
         font-size: 14px;
     }
+}
+
+@media (max-width: 280px) {
+    .project-info {
+        font-size: 16px;
+    }
+
 }
