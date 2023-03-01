@@ -57,11 +57,11 @@ const Projects = () => {
                         associated with that zipcode.Hosted on heroku(may take long to load)
                         </p>
                         <div>
-                            <p className="tech-stack">React.js, JS, CSS</p>
+                            <p className="tech-stack">React, JS, Express, MongoDB, Node</p>
                         </div>
                         <div className = "links">
-                            <a className = "project-links" href='https://luismcityfinder.herokuapp.com/'  target="_blank" rel="noopener noreferrer">Live</a>
-                            <a className = "project-links" id="code" href="https://github.com/luismolinuevo/workouttracker"  target="_blank" rel="noopener noreferrer">Code</a>
+                            {/* <a className = "project-links" href='https://luismcityfinder.herokuapp.com/'  target="_blank" rel="noopener noreferrer">Live</a> */}
+                            <a className = "project-links" id="code" href="https://github.com/luismolinuevo/Full-Stack-Journal-App"  target="_blank" rel="noopener noreferrer">Code</a>
                         </div>
                     </div>
                 </div>
