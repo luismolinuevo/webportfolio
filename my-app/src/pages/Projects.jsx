@@ -1,8 +1,9 @@
 import React from 'react'
 import "../styles/Projects.css"
-import CityPic from "../assets/CitySearcherApp.png"
-import WorkoutApp from "../assets/Workout App.jpg"
+import JournalGif from "../assets/JournalGif.gif"
+import WorkoutApp from "../assets/WorkoutGif.gif"
 import WeatherApp from "../assets/weatherapppic.png"
+import { JackInTheBox, Slide } from 'react-awesome-reveal'
 
 const Projects = () => {
   return (
@@ -10,6 +11,24 @@ const Projects = () => {
         {/* <div className="container"> */}
             <h1 className='heading'>Projects</h1>
             <div className= "projects">
+            {/* <Slide triggerOnce="true" direction='right'> */}
+            <div className = "project-element">
+                    <div><img className="project-pics" src = {WorkoutApp}/></div>
+                    <div>
+                        <h3>Fitszy</h3>
+                        <p className = "project-info">This app allows users to create a personal account, custom workouts, and custom exercises for specific workouts.
+                        It saves user information and allows users to delete, create, add, and edit their workouts and exercises.
+                        
+                        </p>
+                        <div>
+                            <p className="tech-stack">JS, React, Express, Node, Postgresql</p>
+                        </div>
+                    </div>
+                    <div className = "links">
+                        {/* <a className = "project-links" href='https://luismolinuevo.github.io/workouttracker/'  target="_blank" rel="noopener noreferrer">Live</a> */}
+                        <a className = "project-links" id="code" href='https://github.com/luismolinuevo/workoutappv2'  target="_blank" rel="noopener noreferrer">Code</a>
+                    </div>
+                </div>
                 <div className = "project-element">
                     <div><img className="project-pics" src = {WeatherApp}/></div>
                     <div>
@@ -29,9 +48,9 @@ const Projects = () => {
                 </div>
 
                 <div className = "project-element">
-                    <div><img className="project-pics" src={CityPic}/></div>
+                    <div><img className="project-pics" src={JournalGif}/></div>
                     <div>
-                        <h3>City Searcher</h3>
+                        <h3>Journal App</h3>
                         <p className = "project-info">This app was created with React.js and CSS. 
                         It uses state hooks to get a zip code.
                         And then fetches from a public api to find all of the citys
@@ -46,24 +65,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-
-                <div className = "project-element">
-                    <div><img className="project-pics" src = {WorkoutApp}/></div>
-                    <div>
-                        <h3>Workout App</h3>
-                        <p className = "project-info">This app was created with Java Script, Local Storage, HTML, and CSS.
-                        This app allows users to track workout name, rep amount, personal record amount, and more. It then saves that workout using local storage.
-                        
-                        </p>
-                        <div>
-                            <p className="tech-stack">JS, CSS, HTML</p>
-                        </div>
-                    </div>
-                    <div className = "links">
-                        <a className = "project-links" href='https://luismolinuevo.github.io/workouttracker/'  target="_blank" rel="noopener noreferrer">Live</a>
-                        <a className = "project-links" id="code" href='https://github.com/luismolinuevo/workouttracker'  target="_blank" rel="noopener noreferrer">Code</a>
-                    </div>
-                </div>
+                {/* </Slide> */}
             </div>
         {/* </div> */}
     </section>

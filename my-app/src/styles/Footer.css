@@ -32,6 +32,11 @@ footer ul li {
     align-items: center;
 }
 
+.download {
+    text-align: center;
+    padding-right:3px;
+}
+
 @media (max-width: 350px) {
     footer ul li {
         font-size: 25px;

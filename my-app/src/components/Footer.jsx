@@ -5,9 +5,9 @@
 //change icons for skills and proof read
 
 import React from 'react'
-import {FaLinkedin, FaGithub, FaYoutube} from "react-icons/fa"
+import {FaLinkedin, FaGithub, FaYoutube, FaDownload} from "react-icons/fa"
 import "../styles/Footer.css"
-import Resume from "../assets/LM Resume.pdf"
+import Resume from "../assets/LMResume.pdf"
 // import {FaBars, FaTimes} from "react-icons/fa";
 
 
@@ -21,7 +21,7 @@ const Footer = () => {
                     <a href="https://github.com/" target="blank_"><li><FaGithub/></li></a>
                     <a href="https://www.youtube.com/channel/UCRc-HqHUwj3obUnh4--flGQ" target="blank_"><li><FaYoutube/></li> </a>
                 </ul>
-                <a href={Resume} download>Resume</a>
+                <a href={Resume} download><FaDownload className="download" />Resume</a>
             </div>
         </div>
     </footer>

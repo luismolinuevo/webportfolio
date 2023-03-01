@@ -1,8 +1,8 @@
-import {useState, useEffect} from 'react'   //rafce is the short cut
+import {useState, useEffect} from 'react';   //rafce is the short cut
 import {FaBars, FaTimes} from "react-icons/fa";
-import "../styles/Navstyles.css"
-import Resume from "../assets/LM Resume.pdf"
-import {FaLinkedin, FaGithub, FaYoutube } from "react-icons/fa"
+import "../styles/Navstyles.css";
+import Resume from "../assets/LMResume.pdf";
+import {FaLinkedin, FaGithub, FaYoutube } from "react-icons/fa";
 
 const Navbar = () => {
     const [expandNavbar, setExpandNavbar] = useState(false);
@@ -38,7 +38,7 @@ const Navbar = () => {
                             <a href='#skills' onClick={handleClick}>Skills</a>
                             <a href='/#projects' onClick={handleClick}>Projects</a>
                             <a href='#contact-me'  onClick={handleClick}>Contact Me</a>
-                            <a href={Resume} download className ="contact-button" onClick={handleClick}>Resume</a>
+                            <a href={Resume} target="blank_" className ="contact-button" onClick={handleClick}>Resume</a>
                             <div className="navIcons">
                                 <a href="https://www.linkedin.com/in/luismolinuevo/" target="blank_" className='icons'><FaLinkedin/></a>
                                 <a href="https://www.youtube.com/channel/UCRc-HqHUwj3obUnh4--flGQ" target="blank_" className='icons'><FaGithub/></a>
