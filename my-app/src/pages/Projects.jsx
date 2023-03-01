@@ -20,11 +20,11 @@ const Projects = () => {
                         that city. It then displays the temp, wind speed, and humidity for that city.
                         </p>
                         <div>
-                           <p className="tech-stack">Tech Stack: React.js, JS, CSS</p>
+                           <p className="tech-stack">React.js, JS, CSS</p>
                         </div>
                     </div>
                     <div className = "links">
-                        <a className = "project-links" href='https://github.com/luismolinuevo/weatherapp'  target="_blank" rel="noopener noreferrer">Code</a>
+                        <a className = "project-links" id="code" href='https://github.com/luismolinuevo/weatherapp'  target="_blank" rel="noopener noreferrer">Code</a>
                     </div>
                 </div>
 
@@ -38,11 +38,11 @@ const Projects = () => {
                         associated with that zipcode.Hosted on heroku(may take long to load)
                         </p>
                         <div>
-                            <p className="tech-stack">Tech Stack: React.js, JS, CSS</p>
+                            <p className="tech-stack">React.js, JS, CSS</p>
                         </div>
                         <div className = "links">
                             <a className = "project-links" href='https://luismcityfinder.herokuapp.com/'  target="_blank" rel="noopener noreferrer">Live</a>
-                            <a className = "project-links" href="https://github.com/luismolinuevo/workouttracker"  target="_blank" rel="noopener noreferrer">Code</a>
+                            <a className = "project-links" id="code" href="https://github.com/luismolinuevo/workouttracker"  target="_blank" rel="noopener noreferrer">Code</a>
                         </div>
                     </div>
                 </div>
@@ -56,12 +56,12 @@ const Projects = () => {
                         
                         </p>
                         <div>
-                            <p className="tech-stack">Tech Stack: JS, CSS, HTML</p>
+                            <p className="tech-stack">JS, CSS, HTML</p>
                         </div>
                     </div>
                     <div className = "links">
                         <a className = "project-links" href='https://luismolinuevo.github.io/workouttracker/'  target="_blank" rel="noopener noreferrer">Live</a>
-                        <a className = "project-links" href='https://github.com/luismolinuevo/workouttracker'  target="_blank" rel="noopener noreferrer">Code</a>
+                        <a className = "project-links" id="code" href='https://github.com/luismolinuevo/workouttracker'  target="_blank" rel="noopener noreferrer">Code</a>
                     </div>
                 </div>
             </div>
