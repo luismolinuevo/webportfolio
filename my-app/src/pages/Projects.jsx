@@ -43,6 +43,7 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className = "links">
+                        <a className = "project-links" href="https://weatherapp-kappa-ruddy.vercel.app/"  target="_blank" rel="noopener noreferrer">Live</a> 
                         <a className = "project-links" id="code" href='https://github.com/luismolinuevo/weatherapp'  target="_blank" rel="noopener noreferrer">Code</a>
                     </div>
                 </div>
