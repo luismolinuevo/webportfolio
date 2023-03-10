@@ -124,7 +124,7 @@ header div, nav {
 		gap: 1.5rem;
 		background-color: #05AFF2;
 		transition: 1s;
-		transform: translateY(-100vh);
+		transform: translateY(-100vh); /*maybe change this to fix bug*/
 		
 	}
 
