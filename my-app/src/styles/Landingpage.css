@@ -15,8 +15,8 @@
     justify-content: center;
     text-align: center;
     align-content: center;
-    padding-top: 130px;
-    color:#0D0D0D;
+    padding-top: 145px;
+    /* color:#0D0D0D; */
 
 }
 
@@ -70,16 +70,10 @@
 }
 
 
-@media (max-width: 1040px) {
-    .container {
-        padding: 0px 60px;
-    }
-
-}
 
 @media (max-width: 500px) {
     .hero {
-        padding-top:80px;
+        padding-top:90px;
     }
     .hero .hey {
         font-size: 25px;

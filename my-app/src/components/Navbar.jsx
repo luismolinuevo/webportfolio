@@ -3,10 +3,21 @@ import {FaBars, FaTimes} from "react-icons/fa";
 import "../styles/Navstyles.css";
 import Resume from "../assets/LMResume.pdf";
 import {FaLinkedin, FaGithub, FaYoutube } from "react-icons/fa";
+import { useSelector, useDispatch } from 'react-redux';
+import { toggleTheme } from '../redux/themeSlice.js';
+import {MdOutlineLightMode, MdDarkMode} from "react-icons/md"
+
 
 const Navbar = () => {
     const [expandNavbar, setExpandNavbar] = useState(false);
     const [navbar, setNavbar] = useState(false);
+    const isDarkMode = useSelector((state) => state.theme.isDarkMode);
+    const dispatch = useDispatch();
+
+    const handleToggleTheme = () => {
+        dispatch(toggleTheme());
+        console.log(isDarkMode)
+    };
 
     const handleClick = () => setExpandNavbar(!expandNavbar)   //sets expandnavbar to opposite value
 
@@ -58,6 +69,12 @@ const Navbar = () => {
                     }}>
                         <FaBars/>
                     </button>
+
+                    <div>
+                        <button onClick={handleToggleTheme}>
+                            {!isDarkMode ? <MdDarkMode className='icon'/> : <MdOutlineLightMode className='icon'/> }
+                        </button>
+                    </div>
                 </div>
             </header>
         

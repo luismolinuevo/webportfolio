@@ -1,22 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
 
-* {
+/* * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 	font-family: "Titillium Web", sans-serif;
 	scroll-behavior: smooth;
-}
-
+} */
+/* 
 body {
 	background-color: #F2F2F2;
 	
-}
+} */
 
-.container {
+/* .container {
 	width: 100%;
 	padding: 0px 80px;
-}
+}   */
 
 .logoLink {
 	text-decoration: none;
@@ -33,7 +33,7 @@ header {
 	color: #05AFF2;
 	position: sticky;
 	top: 0;
-	margin-top: 10px;
+	/* margin-top: 10px; */
 	z-index: 1;
 }
 
@@ -97,6 +97,14 @@ header div, nav {
 	visibility: hidden;
 }
 
+.icon {
+	padding: 5px;
+	cursor: pointer;
+	background: transparent;
+	color: #05AFF2;
+	font-size: 1.8rem;
+	text-align: center;
+}
 
 
 @media only screen and (max-width: 1024px) {
@@ -124,7 +132,7 @@ header div, nav {
 		gap: 1.5rem;
 		background-color: #05AFF2;
 		transition: 1s;
-		transform: translateY(-100vh);
+		transform: translateY(-100vh); /*maybe change this to fix bug*/
 		
 	}
 
@@ -149,18 +157,6 @@ header div, nav {
 	}
 }
 
-@media (max-width: 800px) {
-	.container {
-		padding: 0px 55px;
-	}
-}
-
-/* @media (max-width: 480px) {
-	.container {
-		padding: 0px 5px;
-	}
-} */
-
 @media (max-width: 350px) {
 	.container {
 		padding: 0px 25px;
@@ -178,6 +174,10 @@ header div, nav {
 		margin-top: 5px;
 		height: 75;
 	}
+
+	.icon {
+		font-size: 1.5rem;
+	}
 }
 
 @media (max-width: 260px) {
@@ -192,6 +192,10 @@ header div, nav {
 
 	header .nav-btn {
 		font-size: 1.3rem;
+	}
+
+	.icon {
+		font-size: 1.2rem;
 	}
 
 }
