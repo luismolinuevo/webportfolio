@@ -6,10 +6,10 @@
 	scroll-behavior: smooth;
 }
 
-/* body {
+body {
 	background-color: #F2F2F2;
-	
-} */
+    color:black;
+}
 
 .container {
 	width: 100%;
@@ -18,5 +18,13 @@
 
 .darkmode{
     background-color: black;
-    color:white;
+    color:#F2F2F2;
+}
+
+.darkmode header nav a {
+    color: #F2F2F2;
+}
+
+.darkmode .project-element {
+    border: 1px solid #05AFF2;
 }

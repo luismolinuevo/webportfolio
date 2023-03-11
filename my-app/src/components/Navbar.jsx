@@ -72,7 +72,7 @@ const Navbar = () => {
 
                     <div>
                         <button onClick={handleToggleTheme}>
-                            {isDarkMode ? <MdDarkMode/> : <MdOutlineLightMode/> }
+                            {!isDarkMode ? <MdDarkMode/> : <MdOutlineLightMode/> }
                         </button>
                     </div>
                 </div>
